@@ -1,0 +1,151 @@
+*{
+  margin: 0;/* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav{
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  width: 98%;
+  padding: 10px 0;
+  margin: auto;
+  height: 78px; 
+}
+
+/* Logo image size */
+.logo{
+  width: 180px;
+}
+
+/* Navigation list layout */
+nav ul{
+  display: flex;
+  align-items: center;
+  }
+
+  /* Spacing between navigation items */
+nav ul li{
+  margin: 0 20px;
+}
+
+/* Navigation link styles */
+nav ul li a{
+  font-size: 15px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover{
+  color: #a5a5a5;
+  border-bottom: 2px solid #a5a5a5;
+}
+
+/* Navigation button styling */
+nav button{
+  padding: 12px 35px;
+  background: #a5a5a5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+/* Hover effect for navigation button */
+nav button:hover{
+  scale: .8;
+}
+
+/* === Hero Section === */
+.hero{
+  min-height: calc(100vh - 171px); /* Full viewport height minus header/footer */
+  background: linear-gradient(45deg,rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./images/hotel_back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Hero content positioning */
+.content{
+  position: absolute; /* Position relative to parent */
+  top: 35%; /* Move down from top */
+  left: 90px;
+}
+
+/* Hero headline style */
+h2{
+  font-size: 52px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Hero paragraph style */
+p{
+  color: #fff;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* === Booking Buttons === */
+.book button{
+  position: absolute;
+  top: 69%;
+  left: 90px;
+  padding: 12px 45px;
+  background: #a5a5a5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: .3s; /* Smooth transition */
+}
+
+/* Hover effect for booking buttons */
+.book button:hover{
+  scale: .9; /* Slight shrink on hover */
+}
+
+/* "Know More" button style */
+.book button.know_more{
+  border: 2px solid #ffffff;
+  background: transparent;
+  margin-left: 215px;
+  color: #ffffff;
+}
+
+/* Hover effect for "Know More" button */
+.book button.know_more:hover{
+  background: #a5a5a5;
+  border: none;
+  scale: 1;
+}
+
+
+/* === Footer Section === */
+footer {
+  padding: 15px 15px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Footer heading style */
+footer h3 {
+  font-size: 24px;
+  color: #072121;
+}
+
+/* Footer paragraph style */
+footer p{
+  font-size: 16px;
+  color: #222;
+}
